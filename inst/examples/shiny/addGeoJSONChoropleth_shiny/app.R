@@ -23,7 +23,7 @@ server <- function(input, output, session) {
         valueProperty = "incidents",
         scale = input$colors,
         mode = "q",
-        steps = 5,
+        steps = seq(0,5e4,1e4),
         color = "#ffffff",
         weight = 1,
         fillOpacity = 0.5,
